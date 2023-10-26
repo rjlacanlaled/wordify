@@ -3,7 +3,6 @@ fn main() {
     println!("{}", to_words(test_num));
 }
 
-
 const BASE: [&'static str; 10] = ["", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine"];
 const TEEN: [&'static str; 10] = ["ten", "eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen", "seventeen", "eighteen", "nineteen"];
 const TENS: [&'static str; 10] = ["", "", "twenty", "thirty", "forty", "fifty", "sixty", "seventy", "eighty", "ninety"];
