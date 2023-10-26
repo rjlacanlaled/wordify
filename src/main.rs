@@ -3,13 +3,12 @@ fn main() {
     println!("{}", to_words(test_num));
 }
 
-const BASE: [&'static str; 10] = ["", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine"];
-const TEEN: [&'static str; 10] = ["ten", "eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen", "seventeen", "eighteen", "nineteen"];
-const TENS: [&'static str; 10] = ["", "", "twenty", "thirty", "forty", "fifty", "sixty", "seventy", "eighty", "ninety"];
-const UNITS: [&'static str; 8] = ["", "thousand", "million", "billion", "trillion", "quadrillion", "quintillion", "sextillion"];
+const BASE: [&str; 10] = ["", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine"];
+const TEEN: [&str; 10] = ["ten", "eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen", "seventeen", "eighteen", "nineteen"];
+const TENS: [&str; 10] = ["", "", "twenty", "thirty", "forty", "fifty", "sixty", "seventy", "eighty", "ninety"];
+const UNITS: [&str; 8] = ["", "thousand", "million", "billion", "trillion", "quadrillion", "quintillion", "sextillion"];
 
 fn to_words(num: usize) -> String {
-
     // Special case for zero
     if num == 0 {
         return "Zero".to_string();
